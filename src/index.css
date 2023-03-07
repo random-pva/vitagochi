@@ -56,6 +56,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+button.select-animal {
+  background: transparent;
+}
+button.select-animal:hover {
+  border-color: transparent;
+}
+button.select-animal:focus,
+button.select-animal:focus-visible {
+  outline: none;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
