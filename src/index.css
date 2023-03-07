@@ -29,6 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #242424;
 }
 
 h1 {
@@ -60,10 +61,17 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+  body {
+    background-color: #ffffff;
+  }
   a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
   }
+}
+
+#footer {
+  font-size: 0.5em;
 }
