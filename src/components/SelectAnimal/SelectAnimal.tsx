@@ -9,7 +9,7 @@ function SelectAnimal() {
     setStore({...store, animal })
   }
 
-  return (
+  return (<>
     <div>
       <h1>Выберите питомца</h1>
       <button className="select-animal" onClick={() => selectAnimal('cat')}>
@@ -19,7 +19,13 @@ function SelectAnimal() {
         <img src={goose} className="logo react" alt="React logo" />
       </button>
     </div>
-  )
+    <footer id="footer">
+      <div>&copy; Random for kids</div>
+      <a href="https://www.flaticon.com/free-icons/goose" title="goose icons">Goose icons created by Smashicons - Flaticon</a><br />
+      <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Freepik - Flaticon</a><br />
+      <a href="https://www.flaticon.com/free-icons/strawberry" title="strawberry icons">Strawberry icons created by juicy_fish - Flaticon</a>
+    </footer>
+  </>)
 }
 
 export default SelectAnimal;

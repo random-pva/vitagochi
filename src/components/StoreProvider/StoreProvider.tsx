@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 
 import { Store } from 'types/Store';
 
@@ -9,7 +9,7 @@ const defaultStore: Store = {
   animal: '',
   name: '',
   age: 0,
-  food: 10,
+  food: 5,
 }
 
 const useStore = () => {
@@ -38,4 +38,4 @@ function StoreProvider({children}: StoreProviderProps): JSX.Element {
   );
 }
 
-export { StoreProvider, useStore }
+export { StoreProvider, useStore, defaultStore }

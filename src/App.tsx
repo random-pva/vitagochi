@@ -14,11 +14,6 @@ function App() {
         </StoreProvider>
       </div>
 
-      <footer id="footer">
-        <div>&copy; Random for kids</div>
-        <a href="https://www.flaticon.com/free-icons/goose" title="goose icons">Goose icons created by Smashicons - Flaticon</a>&nbsp;
-        <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Freepik - Flaticon</a>
-      </footer>
     </div>
   )
 }

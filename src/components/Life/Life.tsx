@@ -1,16 +1,29 @@
-import cat from 'assets/cat.png';
-import goose from 'assets/goose.png';
-import { useStore } from '../StoreProvider/StoreProvider';
+
+import { defaultStore, useStore } from 'components/StoreProvider/StoreProvider';
+import Food from './Food/Food';
+
+import styles from './Life.module.scss';
+import Animal from './Animal/Animal';
 
 function Life() {
   const [store, setStore] = useStore();
 
-  const { animal } = store;
-  const animalSrc = animal == 'cat' ? cat : goose;
+  const { food } = store;
+
+  const reset = () => {
+    setStore(defaultStore);
+  }
+
 
   return (
     <div>
-        <img src={animalSrc} alt="Питомец" />
+      <Animal />
+      <div className={styles.controls}>
+        {food < 10 && (
+          <Food />
+        )}
+        <button onClick={() => reset()}>Сброс</button>
+      </div>
     </div>
   )
 }
