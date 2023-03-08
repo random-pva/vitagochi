@@ -22,8 +22,8 @@ function Life() {
         {food < 10 && (
           <Food />
         )}
-        <button onClick={() => reset()}>Сброс</button>
       </div>
+      <button onClick={() => reset()} className={styles.reset}>Сброс</button>
     </div>
   )
 }

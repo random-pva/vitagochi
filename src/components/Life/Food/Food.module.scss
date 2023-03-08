@@ -1,13 +1,35 @@
+.container {
+  position: relative;
+}
+
 .food {
   width: 50px;
   height: 50px;
   background: transparent;
   transform: translate(0, 0);
+  transition: transform .2s;
+}
+
+.food:hover {
+  transform: scale(1.5);
 }
 
 .foodImage {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.food.animation {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  opacity: 0.5;
+  left: 0;
+  pointer-events: none;
+}
+
+.animation.show {
+  display: inline-block;
 }
 

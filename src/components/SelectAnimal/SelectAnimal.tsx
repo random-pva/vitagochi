@@ -12,10 +12,10 @@ function SelectAnimal() {
   return (<>
     <div>
       <h1>Выберите питомца</h1>
-      <button className="select-animal" onClick={() => selectAnimal('cat')}>
+      <button className="select-item" onClick={() => selectAnimal('cat')}>
         <img src={cat} className="logo react" alt="React logo" />
       </button>
-      <button className="select-animal" onClick={() => selectAnimal('goose')}>
+      <button className="select-item" onClick={() => selectAnimal('goose')}>
         <img src={goose} className="logo react" alt="React logo" />
       </button>
     </div>

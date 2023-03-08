@@ -57,14 +57,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-button.select-animal {
+button.select-item {
   background: transparent;
+  padding: 0;
 }
-button.select-animal:hover {
+button.select-item:hover {
   border-color: transparent;
 }
-button.select-animal:focus,
-button.select-animal:focus-visible {
+button.select-item:focus,
+button.select-item:focus-visible {
   outline: none;
 }
 
